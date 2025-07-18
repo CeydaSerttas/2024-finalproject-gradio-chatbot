@@ -1,0 +1,6 @@
+gradio
+fastapi
+uvicorn
+google-cloud-speech
+google-generativeai
+python-dotenv

@@ -1,0 +1,8 @@
+.env
+credentials.json
+bitirme-2024-*.json
+
+__pycache__/
+*.pyc
+
+venv/
