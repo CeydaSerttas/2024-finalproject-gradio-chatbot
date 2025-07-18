@@ -6,14 +6,11 @@ import google.generativeai as genai
 from google.cloud import speech
 from dotenv import load_dotenv, find_dotenv
 
-# Load environment variables
 load_dotenv(find_dotenv())
 
-# Configure Gemini API
 genai.configure(api_key=os.getenv('GEMINI_API_KEY'))
 model = genai.GenerativeModel('gemini-1.5-pro')
 
-# Set Google Cloud credentials
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
 speech_client = speech.SpeechClient()
 
