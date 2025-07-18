@@ -56,7 +56,6 @@ def transcribe_audio(audio_path):
     return "Sesiniz anlaşılamadı."
 
 
-# Gradio arayüzü
 with gr.Blocks() as demo:
     chatbot = gr.Chatbot(label='Ders Asistanı')
     mesajKutusu = gr.Textbox(label="Mesaj Yazın")
